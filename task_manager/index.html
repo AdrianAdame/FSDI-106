@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Task Manager</title>
+
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" >
+        <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
+        <link rel="stylesheet" href="./styles/style.css" />
+    </head>
+    <body>
+        <h1>Super Task Manager</h1>
+
+        <main>
+            <section id="list">
+                <button class="btn btn-danger" id="btnDetails">Show/Hide Details</button>
+            </section>
+
+            <section id="form" class="row">
+                <div class="col-md-12">
+                    <i id="iImportant" class="fa-solid fa-fire"></i>
+                </div>
+
+                <div class="col-md-6">
+                    <label for="inputTitle" class="form-label">Task Title</label>
+                    <input type="text" id="inputTitle" class="form-control">
+                </div>
+                <div class="col-md-6">
+                    <label for="inputDate" class="form-label">Start Date</label>
+                    <input type="datetime-local" id="inputDate" class="form-control">
+                </div>
+                <div class="col-md-12">
+                    <label for="inputDescription" class="form-label">Description</label>
+                    <textarea type="text" id="inputDescription" rows="3" class="form-control"></textarea>
+                </div>
+                <div class="col-md-6">
+                    <label for="inputColor" class="form-label">Color</label>
+                    <input type="color" id="inputColor" class="form-control">
+                </div>
+                <div class="col-md-6">
+                    <label for="inputStatus" class="form-label">Status</label>
+                    <select name="inputStatus" id="inputStatus" class="form-select">
+                        <option value="none" disabled>-- Select an option</option>
+                        <option value="new">New</option>
+                        <option value="inProgress">In progress</option>
+                        <option value="completed">Completed</option>
+                        <option value="cancelled">Cancelled</option>
+                    </select>
+                </div>
+                <div class="col-md-12">
+                    <label for="inputBudget" class="form-label">Budget</label>
+                    <input type="number" id="inputBudget" class="form-control">
+                </div>
+
+                <div class="col-md-12">
+                    <button class="btn btn-primary" id="btnSave">Save Task</button>
+                </div>
+            </section>
+        </main>
+
+        <script src="https://code.jquery.com/jquery-3.6.4.min.js" crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" crossorigin="anonymous"></script>
+        <script src="./scripts/index.js"></script>
+    </body>
+</html>
