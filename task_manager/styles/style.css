@@ -5,14 +5,14 @@ html, body, *{
 
 h1 {
     color: white;
-    background-color: #212121;
+    background-color: #3D405B;
     text-align: center;
 }
 
 main {
     display: flex;
     flex-direction: row;
-    height: calc(100vh - 47px);
+    height: calc(100vh - 64px);
 }
 
 #list {
@@ -24,7 +24,12 @@ main {
     height: 100%;
     flex: 2;
 
-    padding: 10px 20px;
+    padding: 20px;
+    margin-right: 12px;
+
+    background-color: #81B29A;
+
+    border-radius: 24px;
 }
 
 #iImportant {
@@ -39,5 +44,49 @@ main {
 
 .important-icon {
     color: #ee9617 !important;
+}
 
+.pending-tasks {
+    margin-top: 1.5rem;
+}
+
+.task-card {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    padding: 12px;
+    border-radius: 12px;
+
+    margin: 1rem;
+}
+
+.flex-row {
+    display: flex;
+    flex-direction: row;
+}
+
+.flex-col {
+    display: flex;
+    flex-direction: column;
+}
+
+.space-evenly {
+    justify-content: space-evenly;
+}
+
+.flex-start {
+    justify-content: flex-start;
+}
+
+.description {
+    /* width: auto; */
+    word-wrap: break-word;
+}
+
+#delete-btn {
+    display: block;
+    text-decoration: none;
+    cursor: pointer;
+    text-align: right;
 }
