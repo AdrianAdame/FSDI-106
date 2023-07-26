@@ -1,35 +1,49 @@
-html, body, *{
+html, body{
     margin: 0;
     padding: 0;
+
+    height: 100%;
 }
 
 h1 {
+    margin:0;
     color: white;
-    background-color: #3D405B;
+    background-color: #231f20;
     text-align: center;
 }
 
 main {
     display: flex;
     flex-direction: row;
-    height: calc(100vh - 64px);
+    height: calc(100vh - 48px);
+    background-color: #231f20;
 }
 
 #list {
+    margin-bottom: 24px;
+    background-color: #efe6dd;
     height: 100%;
-    flex: 3;
+    flex: 4;
+    margin: 12px;
+    border-radius: 24px;
+    /* margin: 12px; */
+    height: 96%;
+}
+
+.menu {
+    display: flex;
+    justify-content: space-around;
+    padding: 12px;
 }
 
 #form {
-    height: 100%;
+    margin: 12px;
     flex: 2;
-
     padding: 20px;
-    margin-right: 12px;
-
-    background-color: #81B29A;
-
+    background-color: #bb4430;
     border-radius: 24px;
+
+    overflow-y: auto;
 }
 
 #iImportant {
@@ -46,18 +60,14 @@ main {
     color: #ee9617 !important;
 }
 
-.pending-tasks {
-    margin-top: 1.5rem;
-}
-
 .task-card {
+    background: #efe6dd;
     display: flex;
     flex-direction: row;
     align-items: center;
     justify-content: space-between;
     padding: 12px;
     border-radius: 12px;
-
     margin: 1rem;
 }
 
@@ -89,4 +99,34 @@ main {
     text-decoration: none;
     cursor: pointer;
     text-align: right;
+}
+
+.btn-p {
+    color: white;
+    background-color: #7ebdc2;
+    border-color: #7ebdc2;
+}
+
+.btn-p:hover {
+    color:white;
+    background-color: #5a888b;
+    border-color: #5a888b;
+}
+
+::-webkit-scrollbar {
+    width: 10px;
+}
+
+::-webkit-scrollbar-track {
+    background: #f1f1f1;
+    border-radius: 24px;
+}
+
+::-webkit-scrollbar-thumb {
+    background: #7ebdc2;
+    border-radius: 24px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: #5a888b;
 }
